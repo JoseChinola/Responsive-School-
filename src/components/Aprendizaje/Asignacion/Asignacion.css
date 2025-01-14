@@ -1,0 +1,215 @@
+.header-asignacion {
+    border-bottom: 1px solid #dad7d7;
+    margin-bottom: 20px;
+}
+
+.header-asignacion h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: gray;
+}
+
+/* Contenedor principal */
+.asignacion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.materia-group {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.asignaciones {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    width: 100%;
+}
+
+.asignacion {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 19px;
+}
+
+.asignacion .card {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 7px 25px rgba(112, 111, 111, 0.15);
+    min-width: 100px;
+    max-width: 300px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+/* Tipo de clases */
+.asignacion-no_entregada {
+    background-color: #8b0000;
+}
+
+.asignacion-pendiente {
+    background-color: #ffc107;
+}
+
+.asignacion-entregada {
+    background-color: #4caf50;
+}
+
+.asignacion .card {
+    padding: 10px;
+}
+
+.asignacion .container-title .title {
+    font-size: 18px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.tema-tarea {
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: gray;
+    text-align: center;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info strong {
+    font-weight: bold;
+    width: 200px;
+    text-align: start;
+}
+
+.info span {
+    font-size: 1em;
+    color: #333;
+    text-align: end;
+    flex-grow: 1;
+}
+
+.container-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.but-entrar {
+    position: relative;
+    align-items: center;
+    margin: auto;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 5px;
+}
+.in{
+    padding: 15px 15px;
+}
+.delete{
+    padding: 10px 15px;
+}
+
+/* Estilo del contorno del botón */
+.but-entrar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #2d92b1;
+    width: 40px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+/* Estilo del texto del botón */
+.but-entrar span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #305a85;
+}
+
+/* Estilo del ícono del botón */
+.but-entrar svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 3;
+    transform: translateX(-6px);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+.but-entrar.delete:hover:before {
+    width: 100%;
+    background: #8b0000;
+}
+
+.but-entrar.in:hover:before {
+    width: 100%;
+    background: #007500;
+}
+/* Cambiar el color del texto a blanco al hacer hover */
+
+.but-entrar.delete:hover span {
+    color: white;
+}
+
+.but-entrar.delete:hover svg {
+    stroke: white;  
+}
+
+
+/* Cambiar el color del texto a blanco al hacer hover */
+.but-entrar.in:hover span {
+    color: white;
+}
+
+.but-entrar.in:hover svg {
+    stroke: white;  
+}
+
+
+
+.but-entrar:hover svg {
+    transform: translateX(0);
+}
+
+.but-entrar:active {
+    transform: scale(0.95);
+}

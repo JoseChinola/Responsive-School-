@@ -1,0 +1,188 @@
+/* Contenedor de la vista principal */
+.RecursosDgitales-header {
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.RecursosDgitales-header .card {
+    margin-top: 20px;
+    position: relative;
+    background: white;
+    border-radius: 9px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 7px 25px rgba(112, 111, 111, 0.15);
+    min-width: 250px;
+    max-width: 250px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+
+.RecursosDgitales-header h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.562);
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.RecursosDgitales-header .card h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.RecursosDgitales-header .card .body-recursos {
+    display: block;
+}
+
+.RecursosDgitales-header .card .body-recursos p {
+    margin: 5px;
+    line-height: 1.2;
+    font-size: 16px;
+    text-align: start;
+}
+
+.RecursosDgitales-header .card .body-recursos .but-recurso-ver {
+    color: white;
+    background: #003473;
+    border-color: #003473;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.RecursosDgitales-header .card .body-recursos .but-recurso-ver:hover {
+    color: #fff;
+    background-color: #00234d;
+    border-color: #001d40;
+    box-shadow: 0 8px 25px -8px #003473;
+}
+
+
+/*Recursos digitales*/
+.RecursosDgitales-vista {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.RecursosDgitales-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.RecursosDgitales-vista .recursosD {
+    display: flex;
+    position: relative;
+    gap: 10px;
+    height: 250px;
+    max-width: 100%;
+    padding: 0px;
+    border-radius: 10px;
+    margin: 7px;
+    background-color: red;
+
+}
+
+.recursosD .card {
+    position: relative;
+    background: white;
+    border-radius: 9px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 7px 25px rgba(112, 111, 111, 0.15);
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.body-recursos {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+
+.RecursosDgitales-vista-grid .img-recurso img {
+    width: 175px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*globar*/
+.img-recurso img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title-recursos {
+    width: 100%;
+    padding: 10px;
+    background-color: #003473c4;
+    border-radius: 5px;
+}
+
+.title-recursos a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.title-recursos span {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    transition: color 0.3s ease;
+}
+
+.title-recursos i {
+    color: white;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+
+.title-recursos:hover {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.title-recursos a:hover {
+    background-color: #fff;
+    border: none;
+}
+
+.title-recursos a:hover span {
+    color: #003473c4;
+}
+
+.title-recursos a:hover i {
+    color: #003473c4;
+    transform: translateX(5px);
+}

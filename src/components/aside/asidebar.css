@@ -1,0 +1,499 @@
+/* ======== Variables Globales ======== */
+:root {
+    --blue: #2a2185;
+    --white: #fff;
+    --gray: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+}
+
+/* ======== Globales ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* ======== Logo ======== */
+.logo {
+    max-width: 100%;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* ======== Navegación Principal ======== */
+
+
+
+.main-navigation {
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    background: var(--blue);
+    border-left: 10px solid var(--blue);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.main-navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main-navigation ul li {
+    position: relative;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}
+
+.main-navigation ul li:hover {
+    background: var(--white);
+    margin: 10px 0;
+}
+
+.main-navigation ul li:hover a {
+    color: var(--blue);
+}
+
+
+.main-navigation ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--white);
+    width: 100%;
+}
+
+.main-navigation ul li a .icon {
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+}
+
+.main-navigation ul li a .title {
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.main-navigation ul li:nth-child(1) {
+    margin-bottom: 60px;
+    pointer-events: none;
+}
+
+.main-navigation ul li.selected {
+    background-color: var(--white);
+}
+
+.main-navigation ul li.selected a {
+    color: var(--blue);
+}
+
+/* ======== Efecto Curvo (Hover y Selección) ======== */
+.main-navigation ul li:hover a::before,
+.main-navigation ul li.selected a::before,
+.main-navigation ul li:hover a::after,
+.main-navigation ul li.selected a::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.main-navigation ul li:hover a::before,
+.main-navigation ul li.selected a::before {
+    top: -50px;
+    right: 0;
+    box-shadow: 35px 35px 0 10px var(--white);
+}
+
+.main-navigation ul li:hover a::after,
+.main-navigation ul li.selected a::after {
+    bottom: -50px;
+    right: 0;
+    box-shadow: 35px -35px 0 10px var(--white);
+}
+
+/* ======== Submenú ======== */
+.submenu-navigation {
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    top: 0;
+    left: 76px;
+    background: var(--white);
+    border-right: 1px solid var(--gray);
+    padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.24s ease-in-out;
+}
+
+.submenu-navigation.visible {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.submenu-navigation header img.logo-header {
+    width: 120px;
+    max-height: 40px;
+    margin: 0 auto 20px;
+    display: block;
+    object-fit: contain;
+}
+
+.submenu-navigation .header-divider {
+    border-bottom: 2px solid #dad7d7;
+    /* Color y grosor de la raya */
+    padding-bottom: 15px;
+    /* Espaciado inferior */
+    margin-bottom: 20px;
+    /* Espaciado con el siguiente elemento */
+}
+
+.submenu-navigation header span {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background: linear-gradient(45deg, #ff7f50, #ff6347, #ff4500, #ff8c00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.submenu-navigation .title-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.submenu-navigation .title-header h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--blue);
+    margin: 0;
+}
+
+.submenu-navigation .title-header span {
+    font-size: 12px;
+    color: var(--black2);
+    display: block;
+    margin-top: 5px;
+}
+
+/* Selección del ítem dentro del submenú */
+.submenu-navigation .submenu-item.selected a {
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 30px;
+}
+
+.submenu-navigation .submenu-item.selected a:hover {
+    color: var(--white);
+}
+
+/* Ítems del Submenú */
+.submenu-navigation .submenu-item {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.submenu-navigation .submenu-item i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.submenu-navigation .submenu-item a {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--black2);
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    transition: color 0.15s ease-in, text-decoration 0.15s ease-in;
+}
+
+.submenu-navigation .submenu-item a:hover {
+    color: var(--blue);
+    box-shadow: 0px 5px 16px rgba(0, 0, 255, 0.3);
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 13px;
+    padding: 10px;
+}
+
+
+/*aside de service */
+.aside-service {
+    width: 300px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    top: 0;
+    background-color: #f5f5f5;
+    transition: all 0.24s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    max-height: none;
+    padding: 2rem 0;
+}
+
+
+.aside-service .aside-service-ul {
+    width: 100%;
+    padding: 10px;
+    margin-left: 50px;
+    flex-wrap: nowrap;
+    height: auto;
+}
+
+.aside-service .title-header-service {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding: 0px;
+}
+
+
+.aside-service .title-header-service h6 {
+    font-size: 14px;
+    color: #8094ae;
+    text-align: left;
+    padding: 8px;
+}
+
+.aside-service .service-Menu-item {
+    letter-spacing: 0.01em;
+    line-height: 1.25rem;
+    padding: 8px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.container-service {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 80px;
+}
+
+.aside-service .service-Menu-item a {
+    color: #6e82a5;
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    line-height: 1.25rem;
+
+}
+
+.aside-service .service-Menu-item i {
+    margin-right: 10px;
+    color: #306db8bd;
+}
+
+.aside-service .service-Menu-item:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto para el enlace dentro del item */
+.aside-service .service-Menu-item a:hover {
+    color: #007bff;
+    transition: color 0.3s ease, 0.3s ease;
+}
+
+/* Efecto para el icono dentro del item */
+.aside-service .service-Menu-item i:hover {
+    color: #007bff;
+    transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.aside-service .service-Menu-item.selected {
+    border-radius: 5px;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.aside-service .service-Menu-item.selected a {
+    color: #0b65d4;
+    font-weight: 600;
+
+}
+
+.aside-service .service-Menu-item.selected i {
+    color: #2a2185;
+    font-weight: 600;
+}
+
+
+
+/* ############## Aside menu asignatura ################# */
+.aside-asignatura {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    z-index: 1000;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+    background: #fff;
+}
+
+.aside-asignatura + .main{
+    width: calc(100% - 250px);
+    left: 250px;
+    padding: 0px 40px;
+}
+
+.container-asignatura {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+
+.aside-asignatura .aside-service-ul {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aside-asignatura .service-Menu-item {
+    letter-spacing: 0.01em;
+    line-height: 1.25rem;
+    padding: 8px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.aside-asignatura .asdasda {
+    margin-bottom: 50px;
+}
+
+.aside-asignatura .service-Menu-item a {
+    color: #6e82a5;
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    line-height: 1.25rem;
+
+}
+
+.aside-asignatura .service-Menu-item i {
+    margin-right: 10px;
+    color: #306db8bd;
+}
+
+.aside-asignatura .service-Menu-item:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Efecto para el enlace dentro del item */
+.aside-asignatura .service-Menu-item a:hover {
+    color: #007bff;
+    transition: color 0.3s ease, 0.3s ease;
+}
+
+/* Efecto para el icono dentro del item */
+.aside-asignatura .service-Menu-item i:hover {
+    color: #007bff;
+    transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.aside-asignatura .service-Menu-item:last-child {
+    border-top: 1px solid #dad7d7;
+    margin-top: 20px;
+}
+
+.aside-asignatura .service-Menu-item.selected {
+    border-radius: 9px;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.aside-asignatura .service-Menu-item.selected a {
+    color: #0b65d4;
+    font-weight: 600;
+
+}
+
+.aside-asignatura .service-Menu-item.selected i {
+    color: #2a2185;
+    font-weight: 600;
+}
+
+
+.aside-asignatura header img.logo-header {
+    width: 120px;
+    max-height: 60px;
+    margin: 0 auto 30px;
+    display: block;
+    object-fit: contain;
+}
+
+.aside-asignatura .header-divider {
+    margin-top: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.aside-asignatura header span {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background: linear-gradient(45deg, #ff7f50, #ff6347, #ff4500, #ff8c00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+
+
+
+
+.asignatura-prueba-del-div{
+    width: 100%;
+    background-color: #ff4500;
+    
+}

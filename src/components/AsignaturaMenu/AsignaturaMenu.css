@@ -1,0 +1,327 @@
+.home-asinatura-container {
+    display: grid;
+    flex-wrap: nowrap;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 35% 65%;
+    padding-top: 20px;
+}
+
+.home-asinatura-container .card:first-child {
+    width: 330px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.home-asinatura-container .card .prof-teach {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 330px;
+    max-height: 100%;
+    border-radius: 9px;
+}
+
+.home-asinatura-container .card .prof-teach img {
+    width: 330px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.home-asinatura-container .card .prof-teach .card-body {
+    display: flex;
+    width: 100%;
+    margin: 15px;
+    padding: 8px;
+}
+
+.home-asinatura-container .card .prof-teach .card-body .name-prof {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border-bottom: 1px solid #ddd;
+}
+
+.home-asinatura-container .card .prof-teach .card-body h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.home-asinatura-container .card .prof-teach .card-body h4 {
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+}
+
+.home-asinatura-container .card:last-child {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.home-asinatura-container .card .prof-materia {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+.home-asinatura-container .card .prof-materia h3 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #332e38;
+    font-size: 26px;
+}
+
+
+.home-asinatura-container .card .prof-materia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.home-asinatura-container .card .prof-materia .card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.home-asinatura-container .card .prof-materia .card-body h3 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #332e38;
+    font-size: 20px;
+}
+
+.home-asinatura-container .card .prof-materia .card-body p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 15px;
+    text-align: left;
+}
+
+
+
+
+/* Syllabus css*/
+
+/* Contenedor principal */
+.Syllabus-asinatura-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+/* Estilo para la tarjeta */
+.Syllabus-asinatura-container .card {
+    width: 100%;
+    max-width: 970px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de la información de profesor y objetivos */
+.Syllabus-asinatura-container .card .prof-teach {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 9px;
+    padding: 15px;
+}
+
+.Syllabus-asinatura-container .card .prof-teach .card-body {
+    width: 100%;
+}
+
+/* Estilo para el título */
+.Syllabus-asinatura-container .card .prof-teach .card-body h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el nombre del profesor */
+.Syllabus-asinatura-container .card .prof-teach .card-body .name-prof {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: start;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+/* Estilo para los objetivos */
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-prof {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+
+/* Estilos para objetivos generales y específicos */
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-general,
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-Especifico {
+    flex: 1;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+
+}
+
+/* Estilo para los encabezados de cada sección (Generales / Específicos) */
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-general p span,
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-Especifico p span {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #0066cc;
+    text-transform: uppercase;
+}
+
+/* Estilo para las listas ordenadas */
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-general ol,
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-Especifico ol {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Estilo para los elementos de la lista */
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-general li,
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-Especifico li {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-general ul,
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-Especifico ul {
+    margin-top: 10px;
+    padding-left: 20px;
+
+}
+
+/* Estilo para los elementos de la lista */
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-general .evaluacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    list-style: none;
+
+}
+
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-general .evaluacion span,
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-Especifico .evaluacion span {
+    font-size: 1.1em;
+    color: #0066cc;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+/* Adaptación responsiva para pantallas pequeñas */
+@media (max-width: 768px) {
+    .Syllabus-asinatura-container .card .prof-teach .card-body .obj-prof {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-contenido {
+    border-top: 1px solid #ddd;
+}
+
+/* Estilo para los encabezados de cada sección (Generales / Específicos) */
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-contenido .obj-general p span,
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-contenido .obj-Especifico p span {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #0066cc;
+    text-transform: uppercase;
+}
+
+/* Estilo para las listas ordenadas */
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-contenido .obj-general ol,
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-contenido .obj-Especifico ol {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Estilo para los elementos de la lista */
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-contenido .obj-general li,
+.Syllabus-asinatura-container .card .prof-teach .card-body .obj-contenido .obj-Especifico li {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+
+/* Content */
+
+/* Contenedor principal */
+.Content-asinatura-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 15px;
+    padding-top: 20px;
+    height: 100vh;
+
+}
+
+/* Estilo para la tarjeta */
+.Content-asinatura-container .card {
+    width: 100%;
+    flex: 1;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de la información de profesor y objetivos */
+.Content-asinatura-container .card .prof-teach {
+    flex: 1;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+}

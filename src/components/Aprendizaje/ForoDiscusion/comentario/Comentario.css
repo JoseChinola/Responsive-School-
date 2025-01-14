@@ -1,0 +1,280 @@
+.comentario-item {
+    background-color: #ffffff; 
+    width: 100%;
+    max-width: 90%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.comentario-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.16rem;
+    color: #555;
+}
+
+.comentario-autor {
+    font-weight: bold;
+}
+
+.comentario-fecha {
+    font-style: italic;
+}
+
+.comentario-texto {
+    font-size: 1rem;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.comentario-eliminar {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
+/* button */
+.delete-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(211, 5, 5, 0.678);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.delete-svgIcon {
+    width: 15px;
+    transition-duration: 0.3s;
+}
+
+.delete-svgIcon path {
+    fill: white;
+}
+
+.delete-button:hover {
+    width: 90px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+}
+
+.delete-button:hover .delete-svgIcon {
+    width: 20px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.delete-button::before {
+    display: none;
+    content: "Delete";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+}
+
+.delete-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+}
+
+
+.edit-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    height: 40px;
+    border: none;
+    padding: 0px 20px;
+    background-color: rgb(168, 38, 255);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgb(140, 32, 212);
+    transition-duration: .3s;
+}
+
+.edit-button svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: white;
+    transition-duration: .3s;
+}
+
+.edit-button:hover {
+    color: transparent;
+}
+
+.edit-button:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+}
+
+.edit-button:active {
+    transform: translate(3px, 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}
+
+
+/*contianer editar*/
+.container-edit {
+    width: 100%;
+    margin: 10px;
+    max-width: 500px;
+    display: flex;
+    padding: 12px;
+}
+
+.container-edit textarea {
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    margin: 10px;
+
+}
+
+.container-edit . {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+/*BUTTON EDITAR Y CANCELAR*/
+.save-button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    background-color: #eeeeee4b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    background: #fff;
+    margin-right: 12px;
+}
+
+.save-button .IconContainer {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: 0.3s;
+    
+}
+
+.save-button .icon {
+    border-radius: 1px;
+    fill: #fff;
+}
+
+.save-button .text {
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    z-index: 1;
+    transition-duration: 0.3s;
+    font-size: 1.04em;
+}
+
+.save-button:hover .IconContainer {
+    width: 90px;
+    transition-duration: 0.3s;
+}
+
+.save-button:hover .text {
+    transform: translate(10px);
+    width: 0;
+    font-size: 0;
+    transition-duration: 0.3s;
+}
+
+.save-button:active {
+    transform: scale(0.95);
+    transition-duration: 0.3s;
+}
+
+
+
+/*cancelar */
+.cancel-button {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+}
+
+.cancel-button>svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+.cancel-button:hover>svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+}
+
+.cancel-button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,76 @@
+{
+    "subject": {
+        "name": "Técnicas de Entrevista",
+        "description": "El objetivo de esta asignatura es reconocer y aplicar diferentes modelos de entrevistas en el área de la Psicología..."
+    },
+    "objectives": {
+        "general": [
+            "Reconocer en qué consiste la entrevista como técnica de recogida de datos en función de las dimensiones que se pretendan estudiar.",
+            "Identificar las variables que influyen en la conducta verbal en el proceso de una entrevista."
+        ],
+        "specific": [
+            "Dominar las fases de elaboración de entrevista.",
+            "Reconocer en los diferentes tipos de entrevistas la función que realiza cada uno de los elementos que en ella participan.",
+            "Realizar e interpretar los gráficos de los datos obtenidos en la entrevista psicopedagógica."
+        ]
+    },
+    "content": [
+        {
+            "topic": "INTRODUCCIÓN",
+            "items": [
+                "Reconocer en qué consiste la entrevista como técnica de recogida de datos en función de las dimensiones que se pretendan estudiar.",
+                "Identificar las variables que influyen en la conducta verbal en el proceso de una entrevista."
+            ]
+        },
+        {
+            "topic": "ENTREVISTADOR",
+            "items": [
+                "Dominar las fases de elaboración de entrevista.",
+                "Reconocer en los diferentes tipos de entrevistas la función que realiza cada uno de los elementos que en ella participan.",
+                "Realizar e interpretar los gráficos de los datos obtenidos en la entrevista psicopedagógica."
+            ]
+        },
+        {
+            "topic": "PREPARACIÓN DE LA ENTREVISTA",
+            "items": [
+                "Dominar las fases de elaboración de entrevista.",
+                "Reconocer en los diferentes tipos de entrevistas la función que realiza cada uno de los elementos que en ella participan.",
+                "Realizar e interpretar los gráficos de los datos obtenidos en la entrevista psicopedagógica."
+            ]
+        }
+    ],
+    "methodology": [
+        "La participación directa e indirecta del estudiante en los conocimientos de los principios básicos de la materia.",
+        "Creación de grupos para el análisis de situaciones hipotéticas.",
+        "Diseño de programas de modificación de conducta de acuerdo a los temas estudiados.",
+        "Prácticas de cada una de los temas analizados."
+    ],
+    "evaluation": [
+        {
+            "item": "Asistencia",
+            "percentage": "10%"
+        },
+        {
+            "item": "Práctica, Investigaciones, Exposiciones, Charlas, etc.",
+            "percentage": "20%"
+        },
+        {
+            "item": "Examen Parcial",
+            "percentage": "20%"
+        },
+        {
+            "item": "Examen Final",
+            "percentage": "50%"
+        },
+        {
+            "item": "TOTAL",
+            "percentage": "100%"
+        }
+    ],
+    "bibliography": [
+        "Martín, Garry Pear, Joseph, Modificación de conducta: Qué es y cómo aplicarla., Quinta Edición, Prentice Hall, Madrid. 2000.",
+        "Walker, James E. Shea, Tomas M. Manejo Conductual, 3ra. Edición, Trad.Adapt. Ruiz, Ma. Celia, Editorial El Manual Moderno, S.A., de C. V., México,D.F. Santafe de Bogotá, 1997.",
+        "Bijou, S. Rayek E., Análisis Conductual Aplicado a la Instrucción, Ed. Trillas,1978.",
+        "Wolpe, Joseph, Practica de terapia de la Conducta. Trad. Galindo, Edgar,Editorial Trillas, México, D. F., 1980."
+    ]
+}

@@ -1,0 +1,198 @@
+.faq-container {
+    display: grid;
+    align-items: center;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fast-q {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 19px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.fast-q .card {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 10px;
+    min-width: 300px;
+    max-width: 350px;
+    height: 350px;
+    transition: all 0.3s ease;
+}
+
+.fast-q .card>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fast-q .card .title {
+    font-size: 1.5rem;
+    margin: 0;
+    color: blue;
+    text-align: center;
+    flex-direction: column;
+}
+
+.fast-q .card .parrafoBx {
+    padding: 10px;
+    border-top: 1px solid #dad7d7;
+    border-bottom: 1px solid #dad7d7;
+    margin-bottom: 7px;
+}
+
+.fast-q .card .parrafoBx i {
+    font-size: 2rem;
+    color: blue;
+    margin-bottom: 5px;
+}
+
+.fast-q .card .parrafoBx .parrafo p {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.2;
+    color: #555;
+}
+
+.fast-q .card .but-Cerrar {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Estilo del contorno del botón */
+.fast-q .card .but-Cerrar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+/* Estilo del texto del botón */
+.fast-q .card .but-Cerrar span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+/* Estilo del ícono del botón */
+.fast-q .card .but-Cerrar svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 3;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+.fast-q .card .but-Cerrar:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+.fast-q .card .but-Cerrar:hover svg {
+    transform: translateX(0);
+}
+
+.fast-q .card .but-Cerrar:active {
+    transform: scale(0.95);
+}
+
+
+/*contenido del modal de creacion */
+.faq-create-container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    margin: 25px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-create-container h2 {
+    text-align: center;
+    padding: 7px;
+    text-transform: uppercase;
+    color: #555555b6;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.faq-create-container label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.faq-create-container input {
+    width: 100%;
+    max-width: 70%;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 7px;
+    border: 1px solid #ddd;
+    margin-left: 15px;
+}
+
+.faq-create-container textarea {
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+    height: 80px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    resize: none;
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.form-create-question .container-button-save {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    margin: 0px auto;
+    width: 50%;
+}
+

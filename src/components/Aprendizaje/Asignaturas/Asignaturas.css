@@ -1,0 +1,152 @@
+.header-asignaturas {
+    border-bottom: 1px solid #dad7d7;
+    margin-bottom: 20px;
+}
+
+.header-asignaturas h1 {
+    font-weight: 500;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    color: gray;
+}
+
+.container-asignaturas {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.asignatura {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 19px;
+    justify-content: space-between;
+}
+
+/* Estilo de cada tarjeta dentro del contenedor */
+.asignatura .card {
+    position: relative;
+    background: white;
+    padding: 15px;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(112, 111, 111, 0.15);
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+/* Otros estilos siguen igual */
+.asignatura .card>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.asignatura .card .title {
+    font-size: 20px;
+    padding: 7px;
+    color: gray;
+    font-weight: 800;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.asignatura .card .title span {
+    color: #234567;
+    font-weight: 700;
+}
+
+.asignatura .card .info-bx {
+    padding-bottom: 10px;
+}
+
+.asignatura .card .info-bx .parrafo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.asignatura .card .info-bx .parrafo ul li {
+    display: inline;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.asignatura .card .info-bx .parrafo ul li span {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+
+.asignatura .card .but-entrar {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 15px;
+}
+
+/* Estilo del contorno del botón */
+.asignatura .card .but-entrar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #2d92b1;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+/* Estilo del texto del botón */
+.asignatura .card .but-entrar span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #305a85;
+}
+
+/* Estilo del ícono del botón */
+.asignatura .card .but-entrar svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 3;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+.asignatura .card .but-entrar:hover:before {
+    width: 100%;
+    background: #94d494;
+}
+
+.asignatura .card .but-entrar:hover svg {
+    transform: translateX(0);
+}
+
+.asignatura .card .but-entrar:active {
+    transform: scale(0.95);
+}

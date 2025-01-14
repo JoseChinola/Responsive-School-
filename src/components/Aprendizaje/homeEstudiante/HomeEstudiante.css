@@ -1,0 +1,51 @@
+
+.title-page {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 1.25rem;
+    padding: 0;
+
+}
+
+.title-page h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0;
+}
+
+.title-page ul li {
+    display: inline-block;
+    position: relative;
+    color: #1b406c;
+    padding: 0 .5rem;
+}
+
+.title-page ul li:first-child::after {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    content: "";
+    height: 16px;
+    width: 1px;
+    background: #1b406c;
+    border-radius: 5px;
+}
+
+.title-page {
+    font-size: .813rem;
+    font-weight: 400;
+    color: #0b192b;
+    list-style: none;
+    letter-spacing: .3px;
+    line-height: 1.6;
+    text-align: left !important;
+    box-sizing: border-box;
+    border-radius: .25rem;
+    background: transparent;
+    align-items: center;
+    border-bottom: 1px solid #dad7d7;
+    /* Color y grosor de la raya */
+    padding-bottom: 15px;
+    /* Espaciado inferior */
+    margin-bottom: 20px;
+}

@@ -1,0 +1,159 @@
+/* AnuncioItem.css */
+.anuncios-container {
+    display: grid;
+    align-items: center;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.anuncio {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 19px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Estilo de cada tarjeta dentro del contenedor */
+.anuncio .card {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 10px;
+    min-width: 300px;
+    /* Tamaño mínimo de la carta */
+    max-width: 350px;
+    /* Tamaño máximo de la carta */
+    height: auto;
+    /* La altura se ajustará automáticamente */
+    transition: all 0.3s ease;
+}
+
+/* Otros estilos siguen igual */
+.anuncio .card>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anuncio .card .title {
+    font-size: 1.5rem;
+    margin: 0;
+    color: blue;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.anuncio .card .fecha {
+    color: rgba(128, 128, 128, 0.74);
+    font-size: 1.1rem;
+    margin-top: 1px;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.anuncio .card .parrafoBx {
+    padding: 10px;
+    border-top: 1px solid #dad7d7;
+    border-bottom: 1px solid #dad7d7;
+    margin-bottom: 10px;
+}
+
+.anuncio .card .parrafoBx i {
+    font-size: 2.5rem;
+    margin-left: 10px;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.anuncio .card .parrafoBx .parrafo p {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.anuncio .card .but-ver {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Estilo del contorno del botón */
+.anuncio .card .but-ver:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+/* Estilo del texto del botón */
+.anuncio .card .but-ver span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+/* Estilo del ícono del botón */
+.anuncio .card .but-ver svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 3;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+.anuncio .card .but-ver:hover:before {
+    width: 100%;
+    background: #b1e7b1;
+}
+
+.anuncio .card .but-ver:hover svg {
+    transform: translateX(0);
+}
+
+.anuncio .card .but-ver:active {
+    transform: scale(0.95);
+}
+
+
+/* Tipo de clases */
+.anuncio-info {
+    background-color: lightblue;
+}
+
+.anuncio-advertencia {
+    background-color: #ffc107;
+}
+
+.anuncio-success {
+    background-color: #4caf50;
+}

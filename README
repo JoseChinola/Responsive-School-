@@ -1,0 +1,225 @@
+<>
+            {/* Primer aside (navegación principal) */}
+            <aside className='main-navigation'>
+                <ul>
+                    <li>
+                        <Link>
+                            <span className='icon'>
+                                <img className='logo' src={maracuyaImg} alt="Logo" />
+                            </span>
+                        </Link>
+                    </li>
+                    <li
+                        className={selectedLink === 'home' ? 'selected' : ''}
+                        onClick={() => handleClick('home')}
+                    >
+                        <Link>
+                            <span className='icon'>
+                                <i className='fa-solid fa-house'></i>
+                            </span>
+                            <span className='title'>Inicio</span>
+                        </Link>
+                    </li>
+                    <li
+                        className={selectedLink === 'service' ? 'selected' : ''}
+                        onClick={() => handleClick('service')}
+                    >
+                        <Link>
+                            <span className='icon'>
+                                <i className='fa-solid fa-tools'></i>
+                            </span>
+                            <span className='title'>Service</span>
+                        </Link>
+                    </li>
+                    <li
+                        className={selectedLink === 'learning' ? 'selected' : ''}
+                        onClick={() => handleClick('learning')}
+                    >
+                        <Link>
+                            <span className='icon'>
+                                <i className='fa-solid fa-graduation-cap'></i>
+                            </span>
+                            <span className='title'>Aprendizaje</span>
+                        </Link>
+                    </li>
+                    <li
+                        className={selectedLink === 'account' ? 'selected' : ''}
+                        onClick={() => handleClick('account')}
+                    >
+                        <Link>
+                            <span className='icon'>
+                                <i className='fa-solid fa-user'></i>
+                            </span>
+                            <span className='title'>Cuenta</span>
+                        </Link>
+                    </li>
+                    <li
+                        className={selectedLink === 'support' ? 'selected' : ''}
+                        onClick={() => handleClick('support')}
+                    >
+                        <Link>
+                            <span className='icon'>
+                                <i className="fa-solid fa-handshake-angle"></i>
+                            </span>
+                            <span className='title'>Soporte</span>
+                        </Link>
+                    </li>
+                </ul>
+            </aside>
+
+            {/* Submenú asociado al ítem "Inicio" */}
+            <aside className={`submenu-navigation ${selectedLink ? 'visible' : ''} ${isSubmenuActive ? 'menu-active' : ''}`}>
+                <header className="header-divider">
+                    <img className='logo-header' src={maracuyaImg} alt="Logo-header" />
+                    <span>universidad Maracuya</span>
+                </header>
+                <ul>
+                    {/* Mostrar contenido de "Inicio" por defecto */}
+                    {selectedLink === 'home' && (
+                        <>
+                            <div className='title-header'>
+                                <h6>Inicio</h6>
+                                <span>Página principal.</span>
+                            </div>
+                            <li
+                                className={`submenu-item ${selectedSubmenuItem === 'home' ? 'selected' : ''}`}
+                                onClick={() => handleSubmenuItemClick('home')}
+                            >
+                                <Link to="/">
+                                    <i className="fa-solid fa-house"></i> Inicio
+                                </Link>
+                            </li>
+                        </>
+                    )}
+
+                    {/* Mostrar contenido de "Service" solo cuando esté seleccionado */}
+                    {selectedLink === 'service' && (
+                        <>
+                            <div className='title-header'>
+                                <h6>Servicios</h6>
+                                <span>Servicios disponibles.</span>
+                            </div>
+                            <li
+                                className={`submenu-item ${selectedSubmenuItem === 'service' ? 'selected' : ''}`}
+                                onClick={() => handleSubmenuItemClick('service')}
+                            >
+                                <Link href="">
+                                    <i className="fa-solid fa-tools"></i> Servicios
+                                </Link>
+                            </li>
+                        </>
+                    )}
+
+                    {/* Mostrar contenido de "Aprendizaje" solo cuando esté seleccionado */}
+                    {selectedLink === 'learning' && (
+                        <>
+                            <div className='title-header'>
+                                <h6>Aprendizaje</h6>
+                                <span>Gestión del aprendizaje.</span>
+                            </div>
+                            <li
+                                className={`submenu-item ${selectedSubmenuItem === 'Inicio' ? 'selected' : ''}`}
+                                onClick={() => handleSubmenuItemClick('Inicio')}
+                            >
+                                <Link to="/homeStudent">
+                                    <i className="fa-solid fa-house"></i> Inicio
+                                </Link>
+                            </li>
+                            <li
+                                className={`submenu-item ${selectedSubmenuItem === 'anuncio' ? 'selected' : ''}`}
+                                onClick={() => handleSubmenuItemClick('anuncio')}
+                            >
+                                <Link to="/anuncio">
+                                    <i className="fa-solid fa-bullhorn"></i> Anuncio
+                                </Link>
+                            </li>
+                            <li
+                                className={`submenu-item ${selectedSubmenuItem === 'asignatura' ? 'selected' : ''}`}
+                                onClick={() => handleSubmenuItemClick('asignatura')}
+                            >
+                                <Link to="/asignacion">
+                                    <i className="fa-solid fa-book"></i> Asignaturas
+                                </Link>
+                            </li>
+                            <li
+                                className={`submenu-item ${selectedSubmenuItem === 'foro' ? 'selected' : ''}`}
+                                onClick={() => handleSubmenuItemClick('foro')}
+                            >
+                                <Link to="/foro">
+                                    <i className="fa-solid fa-comments"></i> Foro de discusión
+                                </Link>
+                            </li>
+                            <li
+                                className={`submenu-item ${selectedSubmenuItem === 'asignacion' ? 'selected' : ''}`}
+                                onClick={() => handleSubmenuItemClick('asignacion')}
+                            >
+                                <Link to="/asignacion">
+                                    <i className="fa-solid fa-tasks"></i> Asignación
+                                </Link>
+                            </li>
+                            <li
+                                className={`submenu-item ${selectedSubmenuItem === 'videoconferencia' ? 'selected' : ''}`}
+                                onClick={() => handleSubmenuItemClick('videoconferencia')}
+                            >
+                                <Link to="/video-conferencia">
+                                    <i className="fa-solid fa-video"></i> Videoconferencia
+                                </Link>
+                            </li>
+                            <li
+                                className={`submenu-item ${selectedSubmenuItem === 'recursoDigital' ? 'selected' : ''}`}
+                                onClick={() => handleSubmenuItemClick('recursoDigital')}
+                            >
+                                <Link to="/recursos-digitales">
+                                    <i className="fa-solid fa-folder-open"></i> Recursos digitales
+                                </Link>
+                            </li>
+                            <li
+                                className={`submenu-item ${selectedSubmenuItem === 'preguntaFrec' ? 'selected' : ''}`}
+                                onClick={() => handleSubmenuItemClick('preguntaFrec')}
+                            >
+                                <Link to="/preguntas">
+                                    <i className="fa-solid fa-question-circle"></i> Preguntas frecuentes
+                                </Link>
+                            </li>
+                        </>
+                    )}
+
+                    {/* Mostrar contenido de "Cuenta" solo cuando esté seleccionado */}
+                    {selectedLink === 'account' && (
+                        <>
+                            <div className='title-header'>
+                                <h6>Cuenta</h6>
+                                <span>Administración de la cuenta.</span>
+                            </div>
+
+                            <li className="submenu-item">
+                                <Link href="#">
+                                    <i className="fa-solid fa-house"></i> Perfil
+                                </Link>
+                            </li>
+
+                            <li className="submenu-item">
+                                <Link href="#">
+                                    <i className="fa-solid fa-house"></i> Cambio de contraseña
+                                </Link>
+                            </li>
+                        </>
+                    )}
+
+                    {/* Mostrar contenido de "Soporte" solo cuando esté seleccionado */}
+                    {selectedLink === 'support' && (
+                        <>
+                            <div className='title-header'>
+                                <h6>Soporte</h6>
+                                <span>Soporte y tutoriales de la plataforma.</span>
+                            </div>
+                            <li className="submenu-item">
+                                <Link href="#">
+                                    <i className="fa-solid fa-house"></i> Servicios
+                                </Link>
+                            </li>
+                        </>
+                    )}
+                </ul>
+            </aside>
+        </>

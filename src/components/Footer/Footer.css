@@ -1,0 +1,39 @@
+/* Estilos del footer */
+.footer-container {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 15px;
+}
+
+
+.app-footer {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 2px solid f8f9fa;
+    border-left: 2px solid f8f9fa;
+    border-right: 2px solid f8f9fa;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid gray;
+    justify-content: flex-end;
+    /* Alinea los elementos al final */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+}
+
+.footer-logo {
+    margin-right: 10px;
+    /* Espacio entre el logo y el texto */
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 12px;
+    /* Ajusta el tamaño de la fuente si es necesario */
+}
