@@ -9,7 +9,7 @@ const ForoDiscItem = ({
   onAgregarComentario,
   onDeleteComentario,
   onEditarComentario,
-  onGuardarEdicion,  // Esta función debe estar definida en el componente padre
+  onGuardarEdicion, 
   comentarioEditado
 }) => {
   const [nuevoComentario, setNuevoComentario] = useState('');
@@ -17,7 +17,7 @@ const ForoDiscItem = ({
   // Efecto para llenar el campo de texto con el comentario editado
   useEffect(() => {
     if (comentarioEditado) {
-      setNuevoComentario(comentarioEditado.texto);  // Llenar el campo con el texto editado
+      setNuevoComentario(comentarioEditado.texto);
     }
   }, [comentarioEditado]);
 
@@ -27,7 +27,7 @@ const ForoDiscItem = ({
 
   // Maneja el envío del formulario de comentario
   const handleSubmit = (event) => {
-    event.preventDefault();  // Evita que la página se recargue
+    event.preventDefault();
 
     if (nuevoComentario.trim()) {
       onAgregarComentario(tema.id, nuevoComentario);
@@ -47,7 +47,7 @@ const ForoDiscItem = ({
               comentario={comentario}
               onDelete={() => onDeleteComentario(tema.id, comentario.id)}
               onEdit={(id, texto) => onEditarComentario(tema.id, id, texto)}
-              onGuardarEdicion={(id, texto) => onGuardarEdicion(tema.id, id, texto)} // Asegúrate de pasar esta prop
+              onGuardarEdicion={(id, texto) => onGuardarEdicion(tema.id, id, texto)} 
             />
           ))
         )}

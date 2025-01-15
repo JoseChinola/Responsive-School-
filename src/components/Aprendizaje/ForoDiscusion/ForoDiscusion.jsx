@@ -26,7 +26,7 @@ const ForoDiscusion = () => {
     // Maneja el cambio de comentario en un tema específico
     const handleAgregarComentario = (idTema, textoComentario) => {
         const nuevoComentario = {
-            id: comentarios[idTema].length + 1, // El id del nuevo comentario
+            id: comentarios[idTema].length + 1,
             autor: 'Usuario Anónimo',
             texto: textoComentario,
             fecha: new Date().toLocaleString(),
@@ -59,7 +59,7 @@ const ForoDiscusion = () => {
 
         // Limpiar los campos después de agregar
         setNuevoTema({ titulo: '', descripcion: '', creador: '' });
-        setMostrarFormulario(false); // Cerrar el formulario después de agregar el tema
+        setMostrarFormulario(false);
     };
 
     // Maneja el cambio de valores en el formulario de nuevo tema

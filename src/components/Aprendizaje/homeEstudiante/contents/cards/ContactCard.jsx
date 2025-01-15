@@ -6,7 +6,7 @@ const ContactCard = () => {
             <div className='card-1'>
                 <div className="card-body">
                     <span>La Universidad se comunicará con usted al correo:
-                        <h4>reny25057@gmail.com</h4>
+                        <h4>prueba@gmail.com</h4>
                     </span>
                 </div>
             </div>

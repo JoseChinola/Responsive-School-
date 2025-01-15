@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import { Home } from '../components/Home/home';
 
-import HomeEstudiante from '../components/Aprendizaje/homeEstudiante/HomeEstudiante';
+import HomeEstudiante from '../page/HomeEstudiante';
 import Anuncio from '../components/Aprendizaje/Anucio/Anuncio';
 import Asignacion from '../components/Aprendizaje/Asignacion/Asignacion';
 import Asignaturas from '../components/Aprendizaje/Asignaturas/Asignaturas';

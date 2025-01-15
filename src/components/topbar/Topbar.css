@@ -142,6 +142,7 @@
     cursor: pointer;
 }
 
+
 .user img {
     position: absolute;
     top: 0;
@@ -375,6 +376,7 @@
     transform: scale(1.1);
     color: #007bff;
 }
+
 .lang-content:hover img {
     transform: scale(1.1);
 }

@@ -1,64 +1,63 @@
-// data.js
 const data = [
     {
         id: 1,
-        Materia: 'ROBOTICA',
-        Profesor: 'JUAN MATA PIMENTEL',
-        Tema: 'Robot Industriales',
-        Fecha: '2024-12-09',
+        Materia: 'PROGRAMACION WEB',
+        Profesor: 'ANA LÓPEZ MARTÍNEZ',
+        Tema: 'Desarrollo Frontend',
+        Fecha: '2025-01-15',
         Activo: true,
-        Image: 'https://lms2.oymas.edu.do/assets/avatar/assets/files/p19BrVtNK8Nh41G001-0218614-5-avatar.jpg',
-        Sección: '01110'
+        Image: 'https://www.w3schools.com/w3images/avatar2.png', 
+        Sección: '01234'
     },
     {
         id: 2,
-        Materia: 'ROBOTICA',
-        Profesor: 'JUAN MATA PIMENTEL',
-        Tema: 'Robot Industriales',
-        Fecha: '2024-12-09',
+        Materia: 'INTELIGENCIA ARTIFICIAL',
+        Profesor: 'PEDRO PÉREZ GÓMEZ',
+        Tema: 'Redes Neuronales',
+        Fecha: '2025-02-01',
         Activo: true,
-        Image: 'https://pymstatic.com/67427/conversions/frases-actores-small-16_9.jpg',
-        Sección: '01110'
+        Image: 'https://www.w3schools.com/w3images/avatar6.png', 
+        Sección: '02345'
     },
     {
         id: 3,
-        Materia: 'ROBOTICA',
-        Profesor: 'JUAN MATA PIMENTEL',
-        Tema: 'Robot Industriales',
-        Fecha: '2024-12-09',
+        Materia: 'DESARROLLO DE SOFTWARE',
+        Profesor: 'MARIO GARCÍA ÁVILA',
+        Tema: 'Metodologías Ágiles',
+        Fecha: '2025-03-10',
         Activo: true,
-        Image: 'https://movienetworkpr.com/wp-content/uploads/2018/04/29872471_426197894474495_6569710259908111045_o.jpg',
-        Sección: '01110'
+        Image: 'https://www.w3schools.com/w3images/avatar5.png', 
+        Sección: '03456'
     },
     {
         id: 4,
-        Materia: 'ROBOTICA',
-        Profesor: 'JUAN MATA PIMENTEL',
-        Tema: 'Robot Industriales',
-        Fecha: '2024-12-09',
+        Materia: 'BASE DE DATOS',
+        Profesor: 'LUISA FERNÁNDEZ HERRERA',
+        Tema: 'SQL Avanzado',
+        Fecha: '2025-04-25',
         Activo: true,
-        Image: 'https://i0.wp.com/noescinetodoloquereluce.com/wp-content/uploads/2015/03/avengers_age_of_ultron_ojo.jpg',
-        Sección: '01110'
+        Image: 'https://www.w3schools.com/w3images/avatar4.png', 
+        Sección: '04567'
     },
     {
         id: 5,
-        Materia: 'ROBOTICA',
-        Profesor: 'JUAN MATA PIMENTEL',
-        Tema: 'Robot Industriales',
-        Fecha: '2024-12-09',
+        Materia: 'REDES DE COMPUTADORAS',
+        Profesor: 'JORGE ÁLVAREZ CASTRO',
+        Tema: 'Protocolo TCP/IP',
+        Fecha: '2025-05-05',
         Activo: true,
-        Image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRixAflA-QsJQZTWNQir7-POV9TnzU4EMe2sg&s',
-        Sección: '01110'
+        Image: 'https://www.w3schools.com/w3images/avatar3.png', 
+        Sección: '05678'
     },
     {
         id: 6,
-        Materia: 'ROBOTICA',
-        Profesor: 'JUAN MATA PIMENTEL',
-        Tema: 'Robot Industriales',
-        Fecha: '2024-12-09',
+        Materia: 'SEGURIDAD INFORMÁTICA',
+        Profesor: 'CARLA MARTÍNEZ PÉREZ',
+        Tema: 'Criptografía',
+        Fecha: '2025-06-10',
         Activo: true,
-        Image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTdpHJQ5hxwe2jgnOphjaMUcIF94qYH7Zy7vpTWNzvSoBwRJIxxLMHgSy3-oQ3L_pMvc&usqp=CAU',
-        Sección: '01110'
+        Image: 'https://www.w3schools.com/w3images/avatar2.png', 
+        Sección: '06789'
     }
 ];
 

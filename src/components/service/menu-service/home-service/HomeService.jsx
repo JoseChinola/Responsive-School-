@@ -1,14 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../../Service.css';
+import data from '../../data/data.json'
 
 const HomeService = () => {
 
     const [menuVisible, setMenuVisible] = useState(false);
+    const [courses, setCourses] = useState([]);
+
 
     const toggleMenu = () => {
         setMenuVisible(!menuVisible)
     }
 
+    useEffect(() => {
+        setCourses(data);
+    }, []);
 
 
     return (
@@ -61,222 +67,55 @@ const HomeService = () => {
                     {menuVisible && (
                         <div className="accordion-body">
                             <div className='accordion-innert'>
-                                <div className='accordion-content'>
-
-                                    <div className="card pricing">
-                                        <span className="pricing-badge badge bg-primary">Aprobado</span>
-                                        <div className="pricing-head">
-                                            <div className="pricing-title">
-                                                <h5 className="card-title title">
-                                                    403306 - INTRODUCCIÓN A LA PSICOLOGÍA
-                                                </h5>
-                                                <small>4 crédito(s) | sección 741A</small><br /> LUISA FERNANDA PÉREZ GÓMEZ
-                                            </div>
-                                            <div className="card-text">
-                                                <div className="card-text-nota">
-                                                    <div className="text-nota">
-                                                        <span className="nota-final">85</span>
-                                                        <span className="sub-text">Suma Final</span>
-                                                    </div>
-                                                    <div className="text-nota">
-                                                        <span className="nota-final">B</span>
-                                                        <span className="sub-text">Nota Final</span>
+                                {courses.map((course) => (
+                                    <div className='accordion-content' key={course.id}>
+                                        <div className="card pricing">
+                                            <span className={`pricing-badge badge ${course.estado === 'Aprobado' ? 'bg-primary' : 'bg-danger'}`}>
+                                                {course.estado}
+                                            </span>
+                                            <div className="pricing-head">
+                                                <div className="pricing-title">
+                                                    <h5 className="card-title title">
+                                                        {course.codigo} - {course.materia}
+                                                    </h5>
+                                                    <small>{course.creditos} crédito(s) | sección {course.seccion}</small><br />
+                                                    {course.profesor}
+                                                </div>
+                                                <div className="card-text">
+                                                    <div className="card-text-nota">
+                                                        <div className="text-nota">
+                                                            <span className="nota-final">{course.sumaFinal}</span>
+                                                            <span className="sub-text">Suma Final</span>
+                                                        </div>
+                                                        <div className="text-nota">
+                                                            <span className="nota-final">{course.notaFinal}</span>
+                                                            <span className="sub-text">Nota Final</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-
-                                        <div className="pricing-body">
-                                            <ul className="pricing-features">
-                                                <li>
-                                                    <span>Asistencia</span> - <span><h6>9</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Primer Parcial</span> - <span><h6>16</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Trabajo Práctico</span> - <span><h6>25</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Examen Final</span> - <span><h6>35</h6></span>
-                                                </li>
-                                            </ul>
+                                            <div className="pricing-body">
+                                                <ul className="pricing-features">
+                                                    <li>
+                                                        <span>Asistencia</span> - <span><h6>{course.asistencia}</h6></span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Primer Parcial</span> - <span><h6>{course.primerParcial}</h6></span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Trabajo Práctico</span> - <span><h6>{course.trabajoPractico}</h6></span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Examen Final</span> - <span><h6>{course.examenFinal}</h6></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                ))}
 
-                                <div className='accordion-content'>
 
-                                    <div className="card pricing">
-                                        <span className="pricing-badge badge bg-primary">Aprobado</span>
-                                        <div className="pricing-head">
-                                            <div className="pricing-title">
-                                                <h5 className="card-title title">
-                                                    403307 - PSICOLOGÍA EVOLUTIVA
-                                                </h5>
-                                                <small>3 crédito(s) | sección 742B</small><br /> CARLOS EDUARDO RIVERA MORA
-                                            </div>
-                                            <div className="card-text">
-                                                <div className="card-text-nota">
-                                                    <div className="text-nota">
-                                                        <span className="nota-final">70</span>
-                                                        <span className="sub-text">Suma Final</span>
-                                                    </div>
-                                                    <div className="text-nota">
-                                                        <span className="nota-final">D</span>
-                                                        <span className="sub-text">Nota Final</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="pricing-body">
-                                            <ul className="pricing-features">
-                                                <li>
-                                                    <span>Asistencia</span> - <span><h6>6</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Primer Parcial</span> - <span><h6>12</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Trabajo Práctico</span> - <span><h6>15</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Examen Final</span> - <span><h6>17</h6></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className='accordion-content'>
-                                    {/* Cuarto Curso */}
-                                    <div className="card pricing">
-                                        <span className="pricing-badge badge bg-danger">Reprobado</span>
-                                        <div className="pricing-head">
-                                            <div className="pricing-title">
-                                                <h5 className="card-title title">
-                                                    403308 - FUNDAMENTOS DE LA PSICOLOGÍA
-                                                </h5>
-                                                <small>3 crédito(s) | sección 744C</small><br /> MARÍA PAOLA GARCÍA
-                                            </div>
-                                            <div className="card-text">
-                                                <div className="card-text-nota">
-                                                    <div className="text-nota">
-                                                        <span className="nota-final">42</span>
-                                                        <span className="sub-text">Suma Final</span>
-                                                    </div>
-                                                    <div className="text-nota">
-                                                        <span className="nota-final">F</span>
-                                                        <span className="sub-text">Nota Final</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="pricing-body">
-                                            <ul className="pricing-features">
-                                                <li>
-                                                    <span>Asistencia</span> - <span><h6>5</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Primer Parcial</span> - <span><h6>8</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Trabajo Práctico</span> - <span><h6>15</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Examen Final</span> - <span><h6>14</h6></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className='accordion-content'>
-                                    {/* Quinto Curso */}
-                                    <div className="card pricing">
-                                        <span className="pricing-badge badge bg-primary">Aprobado</span>
-                                        <div className="pricing-head">
-                                            <div className="pricing-title">
-                                                <h5 className="card-title title">
-                                                    403309 - PSICOLOGÍA SOCIAL
-                                                </h5>
-                                                <small>3 crédito(s) | sección 745D</small><br /> ANDREA SERRANO
-                                            </div>
-                                            <div className="card-text">
-                                                <div className="card-text-nota">
-                                                    <div className="text-nota">
-                                                        <span className="nota-final">88</span>
-                                                        <span className="sub-text">Suma Final</span>
-                                                    </div>
-                                                    <div className="text-nota">
-                                                        <span className="nota-final">B</span>
-                                                        <span className="sub-text">Nota Final</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="pricing-body">
-                                            <ul className="pricing-features">
-                                                <li>
-                                                    <span>Asistencia</span> - <span><h6>10</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Primer Parcial</span> - <span><h6>18</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Trabajo Práctico</span> - <span><h6>30</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Examen Final</span> - <span><h6>40</h6></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className='accordion-content'>
-                                    {/* Sexto Curso */}
-                                    <div className="card pricing">
-                                        <span className="pricing-badge badge bg-primary">Aprobado</span>
-                                        <div className="pricing-head">
-                                            <div className="pricing-title">
-                                                <h5 className="card-title title">
-                                                    403310 - PSICOLOGÍA COGNITIVA
-                                                </h5>
-                                                <small>3 crédito(s) | sección 746E</small><br /> JORGE LUIS GARCÍA
-                                            </div>
-                                            <div className="card-text">
-                                                <div className="card-text-nota">
-                                                    <div className="text-nota">
-                                                        <span className="nota-final">92</span>
-                                                        <span className="sub-text">Suma Final</span>
-                                                    </div>
-                                                    <div className="text-nota">
-                                                        <span className="nota-final">A</span>
-                                                        <span className="sub-text">Nota Final</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="pricing-body">
-                                            <ul className="pricing-features">
-                                                <li>
-                                                    <span>Asistencia</span> - <span><h6>10</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Primer Parcial</span> - <span><h6>22</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Trabajo Práctico</span> - <span><h6>28</h6></span>
-                                                </li>
-                                                <li>
-                                                    <span>Examen Final</span> - <span><h6>42</h6></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
 
                             </div>
                         </div>

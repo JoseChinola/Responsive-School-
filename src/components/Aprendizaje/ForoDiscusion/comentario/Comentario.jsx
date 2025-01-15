@@ -6,10 +6,9 @@ const Comentario = ({ comentario, onDelete, onEdit }) => {
 
   // Estado para manejar si el comentario está en modo edición
   const [isEditing, setIsEditing] = useState(false);
-  // Estado para almacenar el texto del comentario mientras se edita
   const [editedText, setEditedText] = useState(comentario.texto);
 
-  // Maneja el cambio en el campo de texto mientras se edita
+
   const handleTextChange = (e) => {
     setEditedText(e.target.value);
   };
@@ -17,10 +16,9 @@ const Comentario = ({ comentario, onDelete, onEdit }) => {
   // Función para guardar el comentario editado
   const handleSaveEdit = () => {
     if (editedText.trim() !== comentario.texto) {
-      // Llamamos al callback onEdit para actualizar el comentario
       onEdit(comentario.id, editedText);
     }
-    setIsEditing(false); // Salimos del modo de edición
+    setIsEditing(false);
   };
 
 

@@ -1,24 +1,21 @@
 .videoConferencia-container {
-    display: grid;
+    display: flex;
     align-items: center;
-    padding: 10px;
-    margin: 10px;
-    gap: 15px;
-    grid-template-columns: repeat(3, 1fr);
+    justify-content:flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
     background-color: white;
     border-radius: 14px;
+    gap: 30px;
 }
 
 
 .videoCoferencia {
     display: flex;
     height: 350px;
-    padding: 10px;
     color: white;
-    margin: 10px;
-    width: 280px;
+    width: 30%;
     perspective: 800px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .card-video {
@@ -112,13 +109,26 @@
     overflow: hidden;
 }
 
+
+
 .video-profe {
-    font-size: 18px;
-    font-weight: 700;
-    font-style: oblique;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
     margin-bottom: 5px;
-    color: #fcf8f8;
+    color: #fff;
+    text-align: center;
 }
+
+.video-materia {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -15px;
+    color: #ddd;
+    text-align: center;
+    font-style: oblique;
+}
+
 
 .video-back .title-container {
     display: flex;
@@ -140,12 +150,6 @@
 }
 
 
-.video-materia {
-    font-size: 17px;
-    font-weight: 500;
-    margin-top: -15px;
-    color: #ddd;
-}
 
 .video-tema {
     font-size: 18px;

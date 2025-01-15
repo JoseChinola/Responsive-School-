@@ -16,9 +16,11 @@ const VideoConferenciaItem = ({ videoConferencia, onClose, onOpen }) => {
                         <img src={Image} alt="perfil maestro" />
                     </div>
 
-                    <p className="video-profe">{Profesor}</p>
-                    <p className="video-materia">{Materia}
-                    </p>
+                    
+                        <p className="video-profe">{Profesor}</p>
+                        <p className="video-materia">{Materia}
+                        </p>
+                    
                 </div>
 
 

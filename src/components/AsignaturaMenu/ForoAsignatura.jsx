@@ -1,9 +1,10 @@
 import React from 'react'
+import ForoDiscusion from '../Aprendizaje/ForoDiscusion/ForoDiscusion'
 
 const ForoAsignatura = () => {
     return (
-        <div>
-            
+        <div className='container-foro-asignatura'>
+            <ForoDiscusion />
         </div>
     )
 }

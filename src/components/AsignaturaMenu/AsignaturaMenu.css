@@ -310,18 +310,37 @@
 .Content-asinatura-container .card {
     width: 100%;
     flex: 1;
-    max-width: 500px;
-    margin: 10px auto;
+    max-width: 50%;
     padding: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenedor de la información de profesor y objetivos */
-.Content-asinatura-container .card .prof-teach {
-    flex: 1;
-    background-color: #f7f7f7;
+.Content-asinatura-container .card .card-body {
+    border: 1px solid #c7cdd1;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 9px;
+    background-color: #f5f5f5;
+}
+
+
+.Content-asinatura-container .card .prof-teach .content-content {
+    background-color: #fff;
+    border: 1px solid #c7cdd1;
+    padding: 15px;
+    border-radius: 7px;
+    margin-top: 3px;
+}
+
+.Content-asinatura-container .card .prof-teach .name-prof {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+
+/*container-foro-asignatura*/
+
+.container-foro-asignatura{
+    margin-top: 40px;
 }

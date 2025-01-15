@@ -3,14 +3,15 @@ import './Topbar.css';
 import perfil from '../../assets/imgs/perfil-2.jpeg';
 
 export const Topbar = ({ onToggle }) => {
-    // Estado para el checkbox (activo por defecto)
     const [isChecked, setIsChecked] = useState(true);
+
 
     // Función para manejar el cambio de estado del checkbox
     const handleToggle = () => {
         setIsChecked(!isChecked);
         onToggle();
     }
+
 
     return (
         <div className="topbar">
@@ -36,9 +37,11 @@ export const Topbar = ({ onToggle }) => {
 
             </div>
 
-            <div className="user">
+            <div className={`user`}>
                 <img src={perfil} alt="User Profile" />
+
             </div>
+
         </div>
     );
 };

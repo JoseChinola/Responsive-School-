@@ -63,8 +63,8 @@
     width: 100%;
     padding: 20px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 30px;
+    grid-template-columns: 70% 30%;
+    grid-gap: 15px;
     margin-top: 10px;
 }
 
@@ -109,7 +109,8 @@
     font-weight: 600;
 }
 
-.details .recentOrders table td, .details .recentOrders table th {
+.details .recentOrders table td,
+.details .recentOrders table th {
     transition: all 0.3s ease;
 }
 
@@ -122,7 +123,7 @@
 .details .recentOrders table tr:hover {
     background: var(--blue);
     color: var(--white);
-    
+
 }
 
 .details .recentOrders table tr:last-child {
@@ -132,7 +133,7 @@
 .details .recentOrders table tbody tr:hover {
     background: var(--blue);
     color: var(--white);
-    
+
 }
 
 .details .recentOrders table tr td {

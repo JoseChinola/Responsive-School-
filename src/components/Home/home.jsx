@@ -125,7 +125,7 @@ export const Home = () => {
                             <tr>
                                 <td width="60px">
                                     <div className="imgBx">
-                                        <img src="/school/assets/imgs/teacher1.png" alt="Profesor Pedro Martinez" />
+                                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profesor Pedro Martinez" />
                                     </div>
                                 </td>
                                 <td>
@@ -135,7 +135,7 @@ export const Home = () => {
                             <tr>
                                 <td width="60px">
                                     <div className="imgBx">
-                                        <img src="/school/assets/imgs/teacher2.jpeg" alt="Profesor Ana Fernández" />
+                                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profesor Ana Fernández" />
                                     </div>
                                 </td>
                                 <td>
@@ -145,7 +145,7 @@ export const Home = () => {
                             <tr>
                                 <td width="60px">
                                     <div className="imgBx">
-                                        <img src="/school/assets/imgs/teacher3.jpg" alt="Profesor Carla Jiménez" />
+                                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profesor Carla Jiménez" />
                                     </div>
                                 </td>
                                 <td>
@@ -155,7 +155,7 @@ export const Home = () => {
                             <tr>
                                 <td width="60px">
                                     <div className="imgBx">
-                                        <img src="/school/assets/imgs/teacher4.jpeg" alt="Profesor Luisa Fernández" />
+                                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profesor Luisa Fernández" />
                                     </div>
                                 </td>
                                 <td>
@@ -165,7 +165,7 @@ export const Home = () => {
                             <tr>
                                 <td width="60px">
                                     <div className="imgBx">
-                                        <img src="/school/assets/imgs/teacher5.jpg" alt="Profesor Maria Peña" />
+                                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profesor Maria Peña" />
                                     </div>
                                 </td>
                                 <td>
@@ -175,7 +175,7 @@ export const Home = () => {
                             <tr>
                                 <td width="60px">
                                     <div className="imgBx">
-                                        <img src="/school/assets/imgs/teacher6.jpg" alt="Profesor Daniela Mercedez" />
+                                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profesor Daniela Mercedez" />
                                     </div>
                                 </td>
                                 <td>
@@ -185,7 +185,7 @@ export const Home = () => {
                             <tr>
                                 <td width="60px">
                                     <div className="imgBx">
-                                        <img src="/school/assets/imgs/teacher7.jpeg" alt="Profesor Daniel Rodriguez" />
+                                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profesor Daniel Rodriguez" />
                                     </div>
                                 </td>
                                 <td>
@@ -195,7 +195,7 @@ export const Home = () => {
                             <tr>
                                 <td width="60px">
                                     <div className="imgBx">
-                                        <img src="/school/assets/imgs/teacher8.jpg" alt="Profesor Katherine Hernández" />
+                                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profesor Katherine Hernández" />
                                     </div>
                                 </td>
                                 <td>
