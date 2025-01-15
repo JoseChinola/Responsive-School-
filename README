@@ -1,27 +1,31 @@
-Proyecto creado con react 
+# Proyecto creado con React
 
+Este proyecto se basa en la gestión del sistema de aprendizaje que tiene la universidad Dominicana O&M. 
 
-El este proyecto se basa en la gestion del sistema de aprendizaje que tiene la universidad Dominicana O&M. 
+## Instrucciones para iniciar el proyecto
 
-
-utilizando para iniciar el proyecto 
+Para iniciar el proyecto, ejecuta el siguiente comando:
 
 npm start 
 
 
-/* Paginas principales */
-**Dasboard**
 
-![Pagina dasboard](dasboard.png)
+
+## Páginas principales
+
+**Dashboard**
+
+![Página dashboard](dasboard.png)
 
 **Aprendizaje**
-![Pagina de inicio info Estudiante](image.png)
+
+![Página de inicio info Estudiante](image.png)
 
 **Cuenta**
-![alt text](image-1.png)
 
+![Página de cuenta](image-1.png)
 
-**Pagina de servicio**
-![Pagina de servicio](<pagina de servicio.png>)
+**Página de servicio**
 
+![Página de servicio](pagina de servicio.png)
 
