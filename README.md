@@ -10,16 +10,16 @@ La aplicación **Responsive-School** es un sistema de aprendizaje que (Organizac
 
 ## Screenshots - Páginas principales
 **Dashboard**
-![Pagina dasboard](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Pagina dasboard](image/dasboard.png)
 
-**Dashboard**
-![Pagina de Dashboard para el estudiante](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+**Pagina inicio**
+![Pagina de Dashboard para el estudiante](image/image.png)
 
-**Dashboard**
-![Perfil](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+**Perfil**
+![Perfil](image/image-1.png)
 
-**Dashboard**
-![Pagina de servicio](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+**Pagina de servicio**
+![Pagina de servicio](image/pagina-servicio.png)
 
 
 ## Features  - ✨ Características de la aplicación 
@@ -47,6 +47,7 @@ La aplicación **Responsive-School** es un sistema de aprendizaje que (Organizac
 
 ### Lo que viene... 🚀
 - Funcionalidades de **backend** para permitir la gestión de usuarios y contenido.
+
 ## Tech Stack
 
 **Client:** React js, CSS
